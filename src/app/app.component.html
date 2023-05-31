@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Залік</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Виконав студент групи Ємельянов В'ячеслав </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <app-collatz (calculated)="handleCollatzCalculated($event)"></app-collatz>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="sequence">
+      <ion-col>
+        <app-collatz-results [sequence]="sequence"></app-collatz-results>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

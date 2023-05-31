@@ -1,0 +1,7 @@
+{
+  "name": "collatz-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
